@@ -1,33 +1,30 @@
 body{
-    font-family: Arial, sans-serif;
+    font-family: monospace;
+    background-color: azure;
 }
-.clearfix:before, .clearfix:after{
-    content: "";
-    display: table;
-}
-.clearfix:after{
-    clear: both;
-}
+
 a{
     color: #0067ab;
     text-decoration: none;
 }
 a:hover{
-    text-decoration: underline;
+    color: red;
+    text-transform: uppercase;
 }
 .form{
+    padding-top: 100px;
     width: 300px;
     margin: 0 auto;
 }
-.head{
-    text-align: right;
-    text-transform: uppercase;
-}
 .logform{
-    margin-left: auto;
-    margin-right: auto;
-    width: 8rem;
-    padding: 20px;
+    width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+}
+.head{
+    display: block;
+    float: right;
+    font-size: 18px;
 }
 input[type='text'], input[type='email'], input[type='password']{
     width: 200px;
@@ -41,15 +38,36 @@ input[type='text'], input[type='email'], input[type='password']{
 input[type='submit']{
     padding: 10px 25px 8px;
     color: #fff;
-    background-color: #0067ab;
-    text-shadow: rgba(0,0,0,0.24) 0 1px 0;
-    font-size: 16px;
-    box-shadow: rgba(255,255,255,0.24) 0 2px 0 0 inset,#fff 0 1px 0 0;
+    background-color: #0064ab;
+    text-shadow: rgba(255, 255, 255, 0.24) 0 2px 0 0 inset,#fff 0 1px 0 0;
     border: 1px solid #0164a5;
     border-radius: 2px;
     margin-top: 10px;
     cursor: pointer;
 }
-put[type='submit']:hover{
+input[type='submit']:hover{
     background-color: #024978;
+}
+.logs table{
+    width: 70%;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logs td{
+    padding: 20px;
+    font-style: italic;
+}
+.logs .tlog{
+    font-style: normal;
+    width: 1rem;
+    text-align: right;
+    font-weight: bold;
+}
+.logs tr:nth-child(odd){
+    background-color: #1F2739;
+    color: white;
+}
+.logs tr:nth-child(even){
+    background-color: snow;
 }

@@ -39,6 +39,7 @@
             <input type="password" name="password" placeholder="Password" required />
             <input type="submit" name="submit" value="Register" />
         </form>
+        <p>Already registered? <a href="login.php">Login In</a></p>
     </div>
     <?php
     }
